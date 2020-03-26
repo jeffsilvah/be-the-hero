@@ -1,0 +1,98 @@
+.login-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-container .form-area{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container .form-area .logo{
+    width: 220px;
+    height: 100px;
+    background-image: url('../../assets/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.login-container .form-area form{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-container .form-area form h2{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.login-container .form-area form input{
+    border: 1px solid #ccc;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.login-container .form-area form button{
+    height: 40px;
+    border: 0;
+    background-color: rgb(201, 3, 3);
+    border-radius: 5px;
+    color:white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.login-container .form-area form button:hover{
+    filter: brightness(90%);
+}
+
+.login-container .form-area form a{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.login-container .form-area form a svg{
+    margin-right: 8px;
+}
+
+.login-container .form-area form a:hover{
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+.login-container .heroes-image{
+    width: 49%;
+    height: 500px;
+    background-image: url('../../assets/heroes.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px){
+    .login-container{
+        flex-direction: column;
+    }
+
+    .login-container .form-area, .login-container .heroes-image{
+        width: 100%;
+    }
+
+}
